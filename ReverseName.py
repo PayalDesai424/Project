@@ -8,7 +8,6 @@ def reverse():
     print(f'Hello {firstName} {lastName}')
     print(f'Your reversed name is: {lastName} {firstName}')
 
-def main():
-    reverse()
+def CommonFunction():
+    print("This is ReverseName file's module ")
 
-main()

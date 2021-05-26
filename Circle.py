@@ -7,7 +7,6 @@ def area():
     areaOfCircle=3.14*radius*radius
     print(f'Area of the circle is: {areaOfCircle}')
 
-def main():
-    area()
+def CommonFunction():
+    print("This is Circle file's module ")
 
-main()
