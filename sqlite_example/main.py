@@ -40,6 +40,8 @@ if __name__=='__main__':
     #insert_student(conn, 2, "Ketan")
     select_student(conn)
 
-    s1=Student.Student()
+    s1=Student.Student(1,"Payal Desai")
     s1.say_hello()
     s1.say_good_bye()
+    #print(s1.sid,s1.snm)
+    s1.display()
