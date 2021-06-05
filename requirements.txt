@@ -1,0 +1,8 @@
+Flask
+mjango
+
+numpy
+panda
+
+pymongo
+Jinja2
