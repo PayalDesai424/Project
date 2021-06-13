@@ -1,0 +1,26 @@
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+    <title>ManageBooking</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
+</head>
+<body>
+
+<ul>
+
+  <li><a href="website.html">Home</a></li>
+  <li><a class="active" href="managebooking.html">ManageBooking</a></li>
+  <li><a href="packages.html">Covid</a></li>
+  <li><a href="faq.html">FAQ</a></li>
+  <li><a href="contact.html">Contact Us</a></li>
+</ul>
+
+
+    <form name="ManageBooking" action=" " method="post">
+        <label for="ticket_no">Ticket No:</label>
+        <input type="text" name="ticket_no"></input><br>
+        <label for="email_id">Email Id:</label>
+        <input type="email" name="email_id"></input><br>
+        <input type="submit" value="Submit"><br>
+    </form>
+</body>
+</html>
