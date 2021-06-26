@@ -1,8 +1,17 @@
+import pymongo
 
+def connection_to_mongodb():
+    connection_string = "mongodb+srv://dbUser:admin@cluster0.ruqz5.mongodb.net/sample_restaurants?retryWrites=true&w=majority"
+    myclient = pymongo.MongoClient(connection_string)
+    db = myclient.sample_restaurants
+    cRestaurants = db["restaurants"]
+    print(myclient)
 
+    #Insert Record
+    connection_customer = db["customers"]
+    mydict = {"name": "Payal Desai", "address": "65 Yorkland Blvd., Toronto"}
+    x = connection_customer.insert_one(mydict)
+    print(x)
 
-# Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+    connection_to_mongodb()
