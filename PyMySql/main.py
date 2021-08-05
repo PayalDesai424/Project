@@ -1,8 +1,25 @@
 # Week_8
 
+import requests
+
+def fetch_rest_api():
+    print("rest api call")
+    response=requests.get("https://reqres.in/api/users?page=1")
+    user_data=response.json()
+    print(user_data)
+
+    total=user_data["total"]
+    print(total)
+
+    data=user_data['data']
+    for record in data:
+        print(record["id"],record["email"],record["first_name"],record["last_name"])
+
+
 # working with file
 if __name__ == '__main__':
     print('working with file')
+    fetch_rest_api();
     try:
         f1 = open("student1.txt", "r")
         # print(f1.read())
@@ -47,6 +64,7 @@ if __name__ == '__main__':
         #print(row.split(","))
 
     f1.close()
+
 
     
 
